@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Pay Slip</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        div {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 48%;
+            font-size: 14px;
+        }
+        .save-btn {
+            background-color: #28a745;
+            color: white;
+        }
+        .print-btn {
+            background-color: #007bff;
+            color: white;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <label>Employee Name</label>
+            <input type="text" id="uname" name="uname" placeholder="Enter your username"/>
+        </div>
+        <div>
+            <label>Employee ID</label>
+            <input type="text" id="uid" name="uid" placeholder="Enter your employee ID"/>
+        </div>
+        <div>
+            <label>Phone No</label>
+            <input type="text" id="phone" name="phone" placeholder="Enter your phone number"/>
+        </div>
+        <div>
+            <button class="save-btn" type="button" onclick="saveData()">Save</button>
+            <button class="print-btn" type="button" onclick="printPayslip()">Print</button>
+        </div>
+    </form>
+    <script src="./milestone.js"></script>
+</body>
+</html>
